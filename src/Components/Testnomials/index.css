@@ -1,0 +1,101 @@
+.Testimonials{
+    display: flex;
+    gap:1rem;
+    padding: 0 2rem;
+
+}
+.left-t{
+    display: flex;
+    flex:1 1;
+    gap:2rem;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+}
+.left-t>:nth-child(1){
+    color:var(--orange);
+    font-weight:bold;
+     
+}
+
+.left-t>:nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.left-t>:nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.left-t>:nth-child(4) {
+    text-transform: none; 
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+
+}
+.right-t{
+    flex:1;
+    position: relative;
+}
+.right-t>img{
+position: absolute;
+width: 17rem;
+height: 17rem;
+right: 10rem;
+top:2rem;
+object-fit: cover;
+}
+.right-t>:nth-child(1){
+     position: absolute;
+     width: 17rem;
+     height: 17rem;
+     top:1rem;
+    right: 11rem;
+    background-color: transparent;
+     border:2px solid orange;
+}
+.right-t>:nth-child(2) {
+ position: absolute;
+ height:17rem ;
+ width: 17rem;
+ background:var(--planCard) ;
+ top:3rem;
+ right: 9rem;
+}
+.arrows{
+    display: flex;
+    gap:1rem;
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    color: white;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:768px){
+    .Testimonials{
+        flex-direction: column;
+    }
+    .left-t>:nth-child(2),.left-t>:nth-child(3){
+        font-size: x-large;
+    }
+    .right-t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+    }
+    .right-t>div{
+        position: relative;
+        display: none;
+    }
+    .right-t>img{
+        top:0;
+        right: 0;
+        position: relative;
+        align-items: center;
+    }
+     
+}
